@@ -5,7 +5,7 @@
  xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0
 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
 	 <description>
-	 	Code Inspection Lab, David Jacome
+	 	Code Inspection Lab, David Jácome
 	 </description>
 	 <rule ref="category/java/performance.xml" />
 	 <rule ref="category/java/bestpractices.xml">
@@ -15,5 +15,17 @@ https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
 	<rule ref="category/java/design.xml/UseUtilityClass">
 		<priority>1</priority>
 	</rule>
-	
+	<rule ref="category/java/errorprone.xml/BeanMembersShouldSerialize">
+	 	<priority>2</priority>
+	</rule>
+	<rule ref="category/java/errorprone.xml/UseLocaleWithCaseConversions">
+		<priority>1</priority>
+	</rule>
+	<rule ref="category/java/documentation.xml/CommentRequired">
+		<priority>1</priority>
+	    <properties>
+	        <property name="classCommentRequirement" value="Ignored" />
+	        <property name="fieldCommentRequirement" value="Ignored" />
+	    </properties>
+	</rule>
 </ruleset>
